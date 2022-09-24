@@ -1,0 +1,101 @@
+<html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estetica.css">
+    <title>Encuesta</title>
+</head>
+        <h1 id="title">ENCUESTA</h1>
+        <p id="description">Cuentenos sobre usted</p>
+<div id="background"></div>
+<body>
+    <form action="" id="survey-form">
+        
+        <div class="caja">
+        <label for="name" id="name-label">Nombre</label>
+            <input type="text" id="name" placeholder="Inserte su nombre aquí" required class="input">
+            </div>
+            
+        <div class="caja">
+            <label for="email" id="email-label">Correo Electronico</label>
+            <input type="email" id="email" placeholder="Inserte su email aquí" required class="input">
+        </div>
+        <br>
+        <div class="caja">
+            <label for="number" id="number-label">Edad</label>
+            <input type="number" id="number" placeholder="Inserte su edad aquí" required min="1" max="115" class="input">
+        </div>
+        <br>
+        <div class="caja" id="dropdown-div">
+        <label for="dropdown"></label>
+        <span>Religión</span> <br>
+            <select type="dropdown" name="pasatiempos" id="dropdown" class="input">
+            <option disabled value="seleccion">Seleccione una religión:</option>
+            <option value="catolico">Católico</option>
+            <option value="protestante">Cristiano protestante</option>
+            <option value="ortodoxo">Cristiano Ortodoxo</option>
+            <option value="musulman">Musulmán</option>
+            <option value="hindu">Hindú</option>
+            <option value="ateo">Ateo</option>
+            <option value="otra">Otra</option>
+            </select>
+        </div>
+        <div class="caja">
+            <span>Estación favorita</span> 
+        </div>
+
+        
+            <input type="radio" name="estacion" class="radio-btn" value="Primavera">
+            <label class="label-div">Primavera</label>
+                
+                    <br>
+            
+                    
+                        <input type="radio" name="estacion" class="radio-btn" value="Verano">
+                        <label for="" class="label-div">Verano</label>
+                
+                    <br>
+            
+                    
+                        <input type="radio" name="estacion" class="radio-btn" value="Otoño">
+                        <label for="" class="label-div">Otoño</label>
+            
+                    <br>
+                    
+                        <input type="radio" name="estacion" class="radio-btn" value="Invierno">
+                        <label for="" class="label-div">Invierno</label>
+            
+        <div class="caja" id="checkbox-div">
+            <span>Pasatiempos</span> <br>
+            <input type="checkbox" value="Leer">Leer
+            <br>
+            <input type="checkbox" value="Musica">Escuchar música
+            <br>
+            <input type="checkbox" value="videojuegos">Jugar videojuegos
+            <br>
+            <input type="checkbox" value="Peliculas">Ver peliculas
+            <br>
+            <input type="checkbox" value="mota">Fumar mota
+            <br>
+            <input type="checkbox" value="Programar">Programar
+            <br>
+            <input type="checkbox" value="niños">Abandonar niños
+            <br>
+            <input type="checkbox" value="otros">Otros
+        </div>
+            
+        <div class="caja">
+            <label for="extra">
+                <span>Información extra</span> 
+                <textarea class="input" name="extra" id="extra" cols="30" rows="2" placeholder="Escriba aquí"></textarea>
+        </label>     
+        </div>
+        <div id="container-submit">
+        <button id="submit">Enviar</button>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+    </form>
+</body>
+</html>

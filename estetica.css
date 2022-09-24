@@ -1,0 +1,120 @@
+body{
+    background-image: linear-gradient(152deg,rgba(121, 90, 175, 0.6), rgba(53, 21, 197, 0.6)), url(e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: sans-serif;
+}
+
+#survey-form{
+    background-color: rgba(46, 31, 31, 0.911);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 15px 10px 20px 50px;
+}
+
+#name, #email, #number{
+    min-height: 2.6em;
+    padding-left: 1em;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: rgb(235, 231, 231);
+    margin-bottom: -30px;
+}
+
+input[type="checkbox" i], input[type="radio" i]{
+    cursor: pointer;
+}
+
+select[type="dropdown" i]{
+    min-height: 2.6em;
+    cursor: pointer;
+}
+
+#description{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(235, 231, 231);
+}
+
+.caja{
+    margin-top: 25px;
+    position: relative;
+    border-radius: 5px;
+    color:white;
+    width: 45%;
+}
+
+.input{
+    width: 30vw;
+    border-radius: 5px;
+    border-width: 0;
+    resize: none;
+}
+
+#checkbox-div{  
+    width: 55%;
+}
+
+.caja label, span{
+    font-size: 25px;
+    color: white;
+}
+
+.label-div{
+    color: white;  
+    padding-left: 50px;
+}
+
+@media (max-width: 300px){
+    span{
+        font-size: 15px;
+    }
+   .caja{
+       size: 40;
+       height: auto;
+   }
+   #survey-form{
+    height: max-content;
+    background-size:cover
+   }
+}
+
+#submit{
+    margin: 25px 0px 25px 0px;
+    border-radius: 5px;
+    background-color: rgb(55, 55, 206);
+    color: white;
+    border-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: rgb(44, 44, 179);
+}
+
+#container-submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+textarea{
+    min-height: 2.6em;
+    vertical-align: middle;
+}
+
+@media(min-width: 100px){
+    span{
+        font-size: 25px;
+    }
+    #survey-form{
+        width: min-content;
+        height: max-content;
+        padding-right: 25px;
+    }
+}
